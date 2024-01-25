@@ -1,0 +1,73 @@
+.category {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10rem;
+
+  margin: 8rem 12rem;
+
+  &__card {
+    background-color: var(--color-green-light-1);
+    box-shadow: 0 2rem 6rem rgb(0, 0, 0, 0.2);
+    position: relative;
+    height: 40rem;
+    &__photo {
+      width: 100%;
+    }
+    &__big-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 2.4rem;
+      margin-left: 3.2rem;
+      margin-top: 4.5rem;
+      &__inner {
+        display: flex;
+        align-items: center;
+
+        &__icon {
+          width: 2rem;
+          height: 2rem;
+          fill: var(--color-green-dark-4);
+          &:hover {
+            cursor: pointer;
+          }
+          &__heart {
+            fill: #fd7e14;
+            width: 3rem;
+            position: absolute;
+            bottom: 75%;
+            right: 5%;
+          }
+        }
+        &__text {
+          margin-left: 1.4rem;
+          font-size: 1.2rem;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      &__button {
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 1.3rem 3rem;
+        background-color: var(--color-green-dark-4);
+        color: var(--color-green-light-1);
+        text-transform: uppercase;
+        width: 100%;
+        display: block;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
+.middle {
+  width: 70%;
+  background-color: var(--color-blue-dark-1);
+  position: absolute;
+  bottom: 45%;
+  right: 15%;
+  padding: 0.8rem 3rem;
+  text-transform: none;
+}

@@ -1,0 +1,53 @@
+.header {
+  height: 75vh;
+  display: flex;
+
+  &__content-left {
+    background-image: linear-gradient(to bottom right, #364ec78a, #91a7ff7c),
+      url(../img/hero-1.jpg);
+    background-size: cover;
+    width: 60rem;
+  }
+  &__content-right {
+    // background-color: purple;
+    background-color: var(--color-green-light-1);
+    flex: 1;
+
+    &__box {
+      margin: 4rem 20rem auto 4rem;
+      // background-color: olivedrab;
+
+      &__header {
+        font-size: 3rem;
+        font-weight: 800;
+        letter-spacing: 0.5rem;
+        display: inline-block;
+        margin-bottom: 4rem;
+        color: var(--color-grey-5);
+      }
+      &__paragraph {
+        font-size: 1.4rem;
+        margin-bottom: 7rem;
+      }
+      &__btn-1 {
+        text-decoration: none;
+        padding: 1rem 3rem;
+        color: var(--color-grey-1);
+        background-color: var(--color-blue-dark-1);
+        margin-right: 5rem;
+        border-radius: 90px;
+        margin-left: 10rem;
+        font-size: 1.5rem;
+        &:hover {
+          background-color: var(--color-blue-dark-2);
+        }
+      }
+      &__btn-2 {
+        color: var(--color-grey-5);
+        font-size: 1.5rem;
+        text-decoration: none;
+        border-bottom: 2px solid var(--color-grey-5);
+      }
+    }
+  }
+}
